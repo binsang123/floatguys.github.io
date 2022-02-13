@@ -9,15 +9,39 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">float guys</a>
-        <div class="menuToggle"></div>
+        <!-- <a href="#" class="logo">BIN SANG</a> -->
+        <!-- <div class="menuToggle"></div> -->
+        <ul id="nav">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li class="navBlog">
+                <a href="#post">
+                    BLOG <i class="nav-arrow-down ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="#">FLOAT GUYS</a></li>
+                    <li><a href="#">TRAVEL</a></li>
+                    <li><a href="#">BOOK</a></li>
+                    <li><a href="#">POSITIVE</a></li>
+                </ul>
+            </li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact" >CONTACT</a></li>
+        </ul>
     </header>
-    <ul class="navigation">
+    <!-- <ul class="navigation">
         <li><a href="#home" onclick = "toggleMenu();">HOME</a></li>
         <li><a href="#about" onclick = "toggleMenu();">ABOUT</a></li>
-        <li><a href="#post" onclick = "toggleMenu();">POST</a></li>
+        <li>
+            <a href="#post" onclick = "toggleMenu();">
+                BLOG <i class="nav-arrow-down ti-angle-down"></i>
+            </a>
+        </li>
+
+        <li><a href="#post" onclick = "toggleMenu();">FLOAT GUYS</a></li>
+        <li><a href="#portfolio" onclick = "toggleMenu();">PORTFOLIO</a></li>
         <li><a href="#contact" onclick = "toggleMenu();">CONTACT</a></li>
-    </ul>
+    </ul> -->
     <section class="banner" id="home">
         <img src="img/banner-page.jpeg" class="cover">
         <div class="contentBx">
@@ -31,10 +55,11 @@
     <section class="about" id="about">
         <div class="title">
             <h2>Call me Bin</h2>
+            <p>"If you don't make a mess, then you're not enjoying yourself as much" </p>
         </div>
         <div class="contentBx">
             <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae optio commodi, ullam consectetur repellendus non officia doloribus quis possimus asperiores, beatae eaque aspernatur, voluptates harum eum hic maxime facilis cum? Quae unde, ad dolore natus ullam non corporis itaque, sapiente fuga recusandae sed corrupti alias. Consectetur deleniti iure minus commodi laboriosam repudiandae ipsa velit cumque a odio, mollitia quasi pariatur repellendus, accusamus, delectus quisquam enim! Corrupti unde neque deserunt repudiandae eos itaque laborum vel consequatur harum sapiente dignissimos quibusdam repellat, consectetur alias minus. Architecto, porro. Omnis voluptatem quia enim quasi accusamus, saepe molestias vero nesciunt cupiditate possimus itaque corporis perspiciatis provident, nam eos expedita culpa iste ea iure eius sapiente sed? Itaque sed praesentium quod provident sit, magni nemo amet rem totam incidunt, molestiae molestias sint omnis eaque. Nam porro doloribus quae totam fuga officia consequatur corporis soluta corrupti sed hic, facere magni veritatis ratione nostrum veniam ab delectus itaque! Qui iste optio molestias, quam ducimus rerum minima dicta aut velit!<br><br> Cupiditate odio at laboriosam mollitia reprehenderit doloremque eos necessitatibus exercitationem? Illo velit minus tempora exercitationem aliquid veniam totam, delectus sit? Odit repellat quo dolore, error vero quidem impedit cumque tenetur. Aspernatur, dolore ipsa culpa nam sunt minima soluta nesciunt fuga quam aperiam, deleniti beatae ea eum magni nobis distinctio odio eaque harum. Repellendus facere voluptatibus nostrum fugit. Voluptatibus, similique? Omnis explicabo saepe ducimus nostrum, voluptas distinctio aliquid, veniam provident nisi, rem suscipit dicta eaque? Pariatur, sequi. Recusandae repellendus, maxime quaerat nisi dolores alias soluta quos sed, error aut cupiditate?</p>
+                <p>Hi there. I'm Sang, call me Bin btw. I  </p>
             </div>
             <div class="content">
                 <div class="imgBx" class="cover">
@@ -47,8 +72,8 @@
     <!-- Latest Blog Post -->
     <section class="post" id="post">
         <div class="title">
-            <h2>latest Post</h2>
-            <p>"If you don't make a mess, then you're not enjoying yourself as much" </p>
+            <h2>latest Posts</h2>
+            
         </div>
         <div class="contentBx">
             <div class="postColumn">
@@ -179,14 +204,14 @@
             <a href=""><i class="ti-skype"></i></a>
             <a href=""><i class="ti-github"></i></a>
         </ul>
-        <p class="copyrightText">Copyright 2022 bis.com. All Right Reserved</p>
+        <p class="copyrightText">Copyright 2022 floatguys.com. All Right Reserved</p>
     </footer>
 
     <script>
-        const menuToggle = document.querySelector('.menuToggle');
+        const navBlog = document.querySelector('.navBlog');
         const navigation = document.querySelector('.navigation');
-        menuToggle.onclick = function() {
-            menuToggle.classList.toggle('active');
+        navBlog.onclick = function() {
+            navBlog.classList.toggle('active');
             navigation.classList.toggle('active');
         }
         window.addEventListener('scroll', function() {
